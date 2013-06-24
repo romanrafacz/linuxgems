@@ -585,3 +585,6 @@ mysqldump -u username -p --opt databasename > dumpfile.sql
 
 # restore from entire database dump:
 mysql -u username -p --database=databasename < dumpfile.sql
+
+#copy data from existing table to new table
+insert into table(select * from othertable);
